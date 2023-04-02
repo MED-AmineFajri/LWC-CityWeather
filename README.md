@@ -1,3 +1,5 @@
+A Custom Salesforce LWC Project built with 2 LWCs that communicate via Pub/Sub events, the 1st Component displaying city names without duplicates from the Accounts data, in a picklist, with a button that fires a Pub/Sub event giving the 2nd LWC the city name picked, which then fetches the weather data of that city with an openweather API and displays the weather information for that city.
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
