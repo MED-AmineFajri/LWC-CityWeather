@@ -1,0 +1,19 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Ville">
+        <lightning-layout>
+            <lightning-layout-item style="margin-left: 10px;" size="6">
+                <lightning-combobox name="villes"
+                    value={cities}
+                    placeholder="Choisir une ville"
+                    options={cities}
+                    onchange={handleChange} >
+                </lightning-combobox>
+            </lightning-layout-item>
+
+            <lightning-layout-item style="margin-left: 10px; margin-top: 21px;" size="6">
+                <lightning-button-icon icon-name="utility:search"  variant="brand" alternative-text="Search" title="Search" onclick={handleClick}></lightning-button-icon>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
