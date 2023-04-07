@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
-    <masterLabel>VilleChannel</masterLabel>
     <description>This message is fired when a city is picked.</description>
+    <isExposed>false</isExposed>
     <lightningMessageFields>
-        <fieldName>BillingCity</fieldName>
         <description>City Record</description>
+        <fieldName>BillingCity</fieldName>
     </lightningMessageFields>
+    <masterLabel>VilleChannel</masterLabel>
 </LightningMessageChannel>

@@ -1,8 +1,9 @@
 public with sharing class WeatherApi {
     @AuraEnabled(cacheable=true)
     public static String getWeather(String city){
-        String APIKey = '9698e1d59e16681170017eedb0b8b082';
-        String endPoint = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=' + APIKey;
+        APIKey__mdt api = [SELECT Weather__c FROM APIKey__mdt];
+        String api_key = api.Weather__c;
+        String endPoint = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=' + api_key;
 
         HttpRequest request = new HttpRequest();
         HttpResponse response = new HttpResponse();
